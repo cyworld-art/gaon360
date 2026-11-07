@@ -41,17 +41,14 @@ button { cursor: pointer; }
   background: rgba(8, 17, 30, .86); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line);
   position: sticky; top: 0; z-index: 20;
 }
-.logo { display: flex; align-items: center; gap: 12px; min-width: 210px; font-size: 16px; font-weight: 800; letter-spacing: 1.2px; }
-.logo b, .footer-logo span { color: var(--cyan); }
-.logo small { display: block; font: 8px var(--mono); letter-spacing: 1.6px; color: #6f8ca6; margin-top: 4px; }
-.logo-emblem {
-  width: 34px; height: 34px; display: grid; place-items: center; border: 1.5px solid var(--cyan); border-radius: 4px;
-  transform: rotate(45deg); box-shadow: 0 0 18px #3ed5ed33, inset 0 0 12px #3ed5ed22; position: relative;
-}
-.logo-emblem::before, .logo-emblem::after { content: ''; position: absolute; width: 5px; height: 5px; background: var(--cyan); border-radius: 50%; }
-.logo-emblem::before { top: -3px; left: -3px; }
-.logo-emblem::after { bottom: -3px; right: -3px; }
-.logo-emblem span { transform: rotate(-45deg); color: var(--cyan); font-weight: 900; font-size: 15px; }
+.logo { display: flex; align-items: center; gap: 11px; min-width: 230px; font-size: 17px; letter-spacing: 1.2px; }
+.logo-mark { width: 40px; height: 40px; flex-shrink: 0; filter: drop-shadow(0 0 10px #3ed5ed44); }
+.logo-word { line-height: 1; }
+.w-gaon { font-weight: 500; }
+.w-vyra { font-weight: 900; }
+.logo-word b { font-weight: 800; }
+.logo b { color: var(--cyan); }
+.logo small { display: block; font: 7.5px var(--mono); letter-spacing: 1.4px; color: #6f8ca6; margin-top: 6px; }
 .nav { display: flex; align-items: center; gap: 20px; }
 .nav a { color: #9bb0c6; font-size: 12px; font-weight: 600; transition: color .2s; white-space: nowrap; position: relative; padding: 6px 0; }
 .nav a:hover, .nav a.active { color: var(--cyan); }
@@ -159,9 +156,10 @@ button { cursor: pointer; }
 /* ---------- inner pages ---------- */
 .inner-page { padding-top: 80px; padding-bottom: 120px; min-height: 65vh; }
 .brand-showcase {
-  position: relative; overflow: hidden; min-height: 340px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  position: relative; overflow: hidden; min-height: 340px; padding: 48px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;
   border: 1px solid #24455d; background: radial-gradient(circle at center, #103958, #0a1828 72%); margin-bottom: 24px;
 }
+.brand-emblem { position: relative; width: min(260px, 60vw); height: auto; margin-bottom: 18px; filter: drop-shadow(0 0 40px #3ed5ed33); }
 .brand-mark { position: relative; display: flex; align-items: baseline; gap: 4px; font-size: clamp(30px, 6vw, 72px); font-weight: 900; letter-spacing: -2px; }
 .brand-mark .vyra { color: #b9effa; }
 .brand-mark strong { color: var(--cyan); margin-left: 14px; text-shadow: 0 0 30px #3ed5ed77; }
@@ -254,12 +252,14 @@ td { font-size: 12px; color: #d0e2eb; }
 /* ---------- footer ---------- */
 .footer { background: #040a13; border-top: 1px solid var(--line); }
 .footer-main { display: grid; grid-template-columns: 2.2fr 1fr 1fr 1.6fr; gap: 28px; padding-top: 60px; padding-bottom: 50px; }
-.footer-logo { font-size: 19px; font-weight: 900; letter-spacing: 1px; }
+.footer-logo { display: flex; align-items: center; gap: 10px; font-size: 19px; letter-spacing: 1px; }
+.footer-logo b { color: var(--cyan); font-weight: 800; }
 .footer-main > div { display: flex; flex-direction: column; gap: 12px; }
 .footer-main strong { color: #bfd0dd; font: 11px var(--mono); letter-spacing: 1px; }
 .footer-main a:not(.footer-logo), .footer-main p, .footer-main span { color: #8ca4b9; font-size: 12px; }
 .footer-main a:not(.footer-logo) { display: flex; align-items: center; gap: 8px; transition: color .2s; }
 .footer-main a:not(.footer-logo):hover { color: var(--cyan); }
+.footer-main .footer-logo span { color: #eff8ff; font-size: inherit; }
 .footer-main .footer-disclaimer { line-height: 1.85; font-size: 11.5px; border-left: 2px solid #2a4a62; padding-left: 12px; max-width: 440px; }
 .footer-main .footer-small { font-size: 10.5px; line-height: 1.6; color: #6c8499; }
 .footer-bottom { padding-top: 20px; padding-bottom: 22px; display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); color: #658197; font: 10px var(--mono); letter-spacing: .8px; }

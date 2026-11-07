@@ -124,8 +124,10 @@ export function Brand() {
       <SectionTitle label="THE BRAND / IDENTITY" title="GAONVYRA 360" desc="All-Round Embedded & AI Technology" />
       <div className="brand-showcase">
         <PcbBackdrop />
-        <div className="brand-mark"><span>GAON</span><span className="vyra">VYRA</span><strong>360<span className="degree">°</span></strong></div>
-        <p>FROM 8-BIT FIRMWARE TO EDGE AI</p>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="brand-emblem" src="/brand/emblem.svg" alt="GAONVYRA 360 emblem" width={260} height={260} />
+        <div className="brand-mark"><span className="w-gaon">GAON</span><span className="vyra">VYRA</span><strong>360<span className="degree">°</span></strong></div>
+        <p>ALL-ROUND EMBEDDED &amp; AI TECHNOLOGY</p>
       </div>
       <div className="brand-grid">
         {parts.map((x, i) => (

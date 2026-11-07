@@ -59,8 +59,9 @@ function Shell({ section }: { section?: string }) {
       </div>
       <header className="header">
         <Link className="logo" href="/" aria-label="GAONVYRA 360 home">
-          <span className="logo-emblem"><span>G</span></span>
-          <span>GAONVYRA <b>360</b><small>EMBEDDED &amp; AI TECHNOLOGY</small></span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className="logo-mark" src="/brand/mark.svg" alt="" width={40} height={40} />
+          <span className="logo-word"><span className="w-gaon">GAON</span><span className="w-vyra">VYRA</span> <b>360</b><small>ALL-ROUND EMBEDDED &amp; AI TECHNOLOGY</small></span>
         </Link>
         <nav className={menuOpen ? 'nav open' : 'nav'} aria-label="Main">
           {nav.map(item => <Link key={item.href} className={isActive(item.key)} href={item.href} onClick={() => setMenuOpen(false)}>{item.label}</Link>)}
@@ -84,7 +85,7 @@ function Shell({ section }: { section?: string }) {
       <footer className="footer">
         <div className="container footer-main">
           <div>
-            <Link href="/" className="footer-logo">GAONVYRA <span>360</span></Link>
+            <Link href="/" className="footer-logo">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/brand/mark.svg" alt="" width={34} height={34} /><span className="logo-word"><span className="w-gaon">GAON</span><span className="w-vyra">VYRA</span> <b>360</b></span></Link>
             <p>All-Round Embedded &amp; AI Technology</p>
             <p className="footer-disclaimer">{tr(t.footerDisclaimer)}</p>
           </div>
