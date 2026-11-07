@@ -104,7 +104,7 @@ function Shell({ section }: { section?: string }) {
           </div>
         </div>
         <div className="footer-bottom container">
-          <span>© 2026 GAONVYRA 360 · NON-COMMERCIAL FICTIONAL TECHNICAL DEMO · NO OFFICIAL AFFILIATION</span>
+          <span>© 2026 GAONVYRA 360 · FICTIONAL TECHNICAL DEMO · NO OFFICIAL AFFILIATION</span>
           <span>ALL DEMOS: CONCEPT / SIMULATION</span>
         </div>
       </footer>

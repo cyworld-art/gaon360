@@ -129,7 +129,7 @@ export const nav: { key: string; label: string; href: string }[] = [
 
 // UI dictionary
 export const t = {
-  topbarLeft: { ko: '비상업 연구·시연 프로젝트', en: 'NON-COMMERCIAL RESEARCH & DEMONSTRATION' },
+  topbarLeft: { ko: '연구·시연 프로젝트', en: 'RESEARCH & DEMONSTRATION' },
   topbarRight: { ko: '가상 기술 플랫폼 · 공식 제휴 없음', en: 'FICTIONAL TECH PLATFORM · NO OFFICIAL AFFILIATION' },
   heroDesc: {
     ko: '8-bit 펌웨어부터 NPU 기반 Edge AI까지 — 하드웨어와 인공지능의 경계를 잇는 통합 엔지니어링 포트폴리오.',
@@ -143,7 +143,7 @@ export const t = {
   projDesc: { ko: '모든 데모는 Concept 또는 Simulation으로 표시되며 실제 상용 제품이 아닙니다.', en: 'Every demo is labeled Concept or Simulation — none are commercial products.' },
   viewAll: { ko: '전체 프로젝트', en: 'View all projects' },
   readMore: { ko: '자세히 보기', en: 'Learn more' },
-  philosophy: { ko: 'GAONVYRA 360은 영업·판매를 하지 않는 비상업적 가상 기술 시연 프로젝트입니다.', en: 'GAONVYRA 360 is a non-commercial, fictional technical demonstration — nothing is sold.' },
+  philosophy: { ko: 'GAONVYRA 360은 하드웨어와 인공지능을 잇는 가상 기술 시연 프로젝트입니다.', en: 'GAONVYRA 360 is a fictional technical demonstration bridging hardware and intelligence.' },
   ourPhilosophy: { ko: '브랜드 철학', en: 'Our Philosophy' },
   coreTopics: { ko: '핵심 주제', en: 'Core Topics' },
   researchDemos: { ko: '연구 & 데모', en: 'Research & Demos' },
@@ -154,8 +154,8 @@ export const t = {
     en: 'Synthetic data only · Not a medical device · Not for diagnosis, treatment or health decisions · Never upload real patient data',
   },
   footerDisclaimer: {
-    ko: '본 사이트는 비상업적 가상(fictional) 기술 시연 프로젝트입니다. 제품 판매·유료 서비스·의료 서비스를 제공하지 않으며, 언급된 어떤 기업·기관과도 공식 제휴 관계가 없습니다.',
-    en: 'This site is a non-commercial, fictional technical demo. It offers no products, paid services or medical services, and has no official affiliation with any company or organization mentioned.',
+    ko: '본 사이트는 가상(fictional) 기술 시연 프로젝트입니다. 의료 서비스를 제공하지 않으며, 언급된 어떤 기업·기관과도 공식 제휴 관계가 없습니다.',
+    en: 'This site is a fictional technical demo. It offers no medical services and has no official affiliation with any company or organization mentioned.',
   },
   contact: { ko: '대표 연락처', en: 'Contact' },
   notFound: { ko: '페이지를 찾을 수 없습니다.', en: 'Page not found.' },

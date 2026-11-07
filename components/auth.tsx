@@ -53,7 +53,7 @@ export function AuthPage({ onSignedIn }: { onSignedIn: () => void }) {
       <div className="auth-box">
         <span className="eyebrow">MEMBER PORTAL</span>
         <h1>{heading}</h1>
-        <p>{ko ? 'GAONVYRA 360 기술 커뮤니티 (무료 · 비상업)' : 'GAONVYRA 360 tech community (free · non-commercial)'}</p>
+        <p>{ko ? 'GAONVYRA 360 기술 커뮤니티' : 'GAONVYRA 360 tech community'}</p>
         {!supabase && <div className="warn">{ko ? 'Supabase 미연결 · 화면 미리보기 모드' : 'Supabase not connected · preview mode'}</div>}
         <form onSubmit={submit}>
           {mode === 'signup' && <label>{ko ? '표시 이름' : 'Display name'}<input maxLength={70} value={name} onChange={e => setName(e.target.value)} placeholder={ko ? '선택사항' : 'Optional'} /></label>}
