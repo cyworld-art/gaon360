@@ -1,13 +1,12 @@
 # GAONVYRA 360 — Free Website Starter
 
-**All-Round Embedded & AI Technology** · 비상업적 가상 기술기업 사이트.
+**All-Round Embedded & AI Technology** · 비상업적 사이트.
 
 ![license](https://img.shields.io/badge/hosting-Vercel%20Hobby-222?style=flat-square)
 
-## 포함 기능
+## 기능
 
 - Home, About, **Brand**, NPU & AI SDK, 8/16/32-bit Firmware, Healthcare, Embedded Hardware, AI Model Inference, Projects & Demos, Tech Notes
-- Supabase Auth 이메일 회원가입/로그인/비밀번호 재설정
 - 개인 프로필 수정 (`/account`)
 - **관리자 전용 가입자 조회** (`/admin`): 이메일/표시 이름 검색, 가입일·마지막 로그인일, 20명 단위 페이지
 - 서버/DB에서 권한을 강제하는 RLS + security definer RPC, 회원이 자신의 role을 변경할 수 없도록 열 수준 권한 설정
