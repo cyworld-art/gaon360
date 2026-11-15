@@ -101,11 +101,11 @@ function Shell({ section }: { section?: string }) {
             <strong>{tr(t.contact).toUpperCase()}</strong>
             <a href={`mailto:${CONTACT_EMAIL}`}><Mail size={14} /> {CONTACT_EMAIL}</a>
             <a href="https://github.com/DEEPX-AI" rel="noopener noreferrer" target="_blank"><Github size={14} /> Public NPU SDK reference</a>
-            <span className="footer-small">{lang === 'ko' ? '외부 저장소 인용 시 원 라이선스를 따릅니다. 공식 제휴 아님.' : 'External repos are cited under their own licenses. Not affiliated.'}</span>
+            <span className="footer-small">{lang === 'ko' ? '외부 저장소 인용 시 원 라이선스를 따릅니다.' : 'External repos are cited under their own licenses.'}</span>
           </div>
         </div>
         <div className="footer-bottom container">
-          <span>© 2026 GAONVYRA 360 · FICTIONAL TECHNICAL DEMO · NO OFFICIAL AFFILIATION</span>
+          <span>© 2026 GAONVYRA 360 · FICTIONAL TECHNICAL DEMO</span>
           <span>ALL DEMOS: CONCEPT / SIMULATION</span>
         </div>
       </footer>

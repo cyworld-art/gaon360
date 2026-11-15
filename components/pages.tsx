@@ -143,7 +143,7 @@ export function Brand() {
       </div>
       <div className="notice"><AlertTriangle size={20} /><div>
         <strong>{ko ? '상표 등록 상태: 미확인' : 'Trademark status: unverified'}</strong>
-        <p>{ko ? '이 명칭은 가상 프로젝트 브랜드이며 등록상표 또는 어떤 기업과의 공식 제휴를 의미하지 않습니다.' : 'This is a fictional project brand. It is not a registered trademark and implies no official affiliation with any company.'}</p>
+        <p>{ko ? '이 명칭은 가상 프로젝트 브랜드이며 등록상표가 아닙니다.' : 'This is a fictional project brand and is not a registered trademark.'}</p>
       </div></div>
     </div>
   );

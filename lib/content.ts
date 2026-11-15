@@ -130,7 +130,7 @@ export const nav: { key: string; label: string; href: string }[] = [
 // UI dictionary
 export const t = {
   topbarLeft: { ko: '연구·시연 프로젝트', en: 'RESEARCH & DEMONSTRATION' },
-  topbarRight: { ko: '가상 기술 플랫폼 · 공식 제휴 없음', en: 'FICTIONAL TECH PLATFORM · NO OFFICIAL AFFILIATION' },
+  topbarRight: { ko: '가상 기술 플랫폼', en: 'FICTIONAL TECH PLATFORM' },
   heroDesc: {
     ko: '8-bit 펌웨어부터 NPU 기반 Edge AI까지 — 하드웨어와 인공지능의 경계를 잇는 통합 엔지니어링 포트폴리오.',
     en: 'From 8-bit firmware to NPU-powered edge AI — an engineering portfolio bridging hardware and intelligence.',
@@ -154,8 +154,8 @@ export const t = {
     en: 'Synthetic data only · Not a medical device · Not for diagnosis, treatment or health decisions · Never upload real patient data',
   },
   footerDisclaimer: {
-    ko: '본 사이트는 가상(fictional) 기술 시연 프로젝트입니다. 의료 서비스를 제공하지 않으며, 언급된 어떤 기업·기관과도 공식 제휴 관계가 없습니다.',
-    en: 'This site is a fictional technical demo. It offers no medical services and has no official affiliation with any company or organization mentioned.',
+    ko: '본 사이트는 가상(fictional) 기술 시연 프로젝트입니다. 의료 서비스를 제공하지 않습니다.',
+    en: 'This site is a fictional technical demo. It offers no medical services.',
   },
   contact: { ko: '대표 연락처', en: 'Contact' },
   notFound: { ko: '페이지를 찾을 수 없습니다.', en: 'Page not found.' },
