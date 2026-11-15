@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { Activity, AlertTriangle, ArrowRight, BookOpen, BrainCircuit, CheckCircle, ChevronRight, CircuitBoard, Cpu, HeartPulse, Layers, Mail } from 'lucide-react';
 import { CONTACT_EMAIL, notes, projects, t, techs, type Tech } from '@/lib/content';
 import { useLang } from '@/lib/i18n';
-import { ChipArt, PcbBackdrop, SyntheticWave } from './visuals';
+import { PcbBackdrop, SyntheticWave } from './visuals';
+import { Emblem3D, Wordmark } from './Wordmark';
 import { DemoBadge, SectionTitle } from './ui';
 
 const icons = { cpu: Cpu, microchip: Cpu, heart: HeartPulse, brain: BrainCircuit, circuit: CircuitBoard, layers: Layers };
@@ -66,6 +67,7 @@ export function Homepage() {
         <PcbBackdrop />
         <div className="hero-content">
           <div className="hero-kicker"><span className="signal" /> ENGINEERING WITHOUT BOUNDARIES <span className="version">FICTIONAL LAB / 2026</span></div>
+          <div className="hero-wordmark"><Wordmark size="lg" /></div>
           <h1>All-Round<br /><em>Embedded &amp; AI</em><br />Technology<span className="cursor">_</span></h1>
           <p className="hero-description">{tr(t.heroDesc)}</p>
           <div className="hero-actions">
@@ -78,7 +80,7 @@ export function Homepage() {
             <div><strong>360°</strong><span>END-TO-END</span></div>
           </div>
         </div>
-        <div className="hero-art"><ChipArt /></div>
+        <div className="hero-art"><Emblem3D className="hero-emblem" /></div>
       </section>
       <div className="domain-strip" aria-hidden="true">
         <div className="marquee">
@@ -124,9 +126,9 @@ export function Brand() {
       <SectionTitle label="THE BRAND / IDENTITY" title="GAONVYRA 360" desc="All-Round Embedded & AI Technology" />
       <div className="brand-showcase">
         <PcbBackdrop />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="brand-emblem" src="/brand/emblem.svg" alt="GAONVYRA 360 emblem" width={260} height={260} />
-        <div className="brand-mark"><span className="w-gaon">GAON</span><span className="vyra">VYRA</span><strong>360<span className="degree">°</span></strong></div>
+        <Emblem3D className="brand-emblem" size={300} />
+        <p className="gaon-caption"><b>가온</b><span />{ko ? '세상의 중심, 모든 기술이 만나는 한가운데' : 'The center — where every technology meets'}</p>
+        <Wordmark size="xl" stacked />
         <p>ALL-ROUND EMBEDDED &amp; AI TECHNOLOGY</p>
       </div>
       <div className="brand-grid">

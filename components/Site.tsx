@@ -9,6 +9,7 @@ import { CONTACT_EMAIL, nav, t, techs } from '@/lib/content';
 import { LangProvider, useLang } from '@/lib/i18n';
 import { About, Brand, Homepage, Notes, Privacy, Projects, TechDetail } from './pages';
 import { Account, Admin, AuthPage } from './auth';
+import { Emblem3D, Wordmark } from './Wordmark';
 
 export default function Site({ section }: { section?: string }) {
   return <LangProvider><Shell section={section} /></LangProvider>;
@@ -59,9 +60,8 @@ function Shell({ section }: { section?: string }) {
       </div>
       <header className="header">
         <Link className="logo" href="/" aria-label="GAONVYRA 360 home">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="logo-mark" src="/brand/mark.svg" alt="" width={40} height={40} />
-          <span className="logo-word"><span className="w-gaon">GAON</span><span className="w-vyra">VYRA</span> <b>360</b><small>ALL-ROUND EMBEDDED &amp; AI TECHNOLOGY</small></span>
+          <Emblem3D className="logo-emblem3d" size={48} />
+          <span className="logo-text"><Wordmark size="sm" /><small>ALL-ROUND EMBEDDED &amp; AI TECHNOLOGY</small></span>
         </Link>
         <nav className={menuOpen ? 'nav open' : 'nav'} aria-label="Main">
           {nav.map(item => <Link key={item.href} className={isActive(item.key)} href={item.href} onClick={() => setMenuOpen(false)}>{item.label}</Link>)}
@@ -85,7 +85,7 @@ function Shell({ section }: { section?: string }) {
       <footer className="footer">
         <div className="container footer-main">
           <div>
-            <Link href="/" className="footer-logo">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/brand/mark.svg" alt="" width={34} height={34} /><span className="logo-word"><span className="w-gaon">GAON</span><span className="w-vyra">VYRA</span> <b>360</b></span></Link>
+            <Link href="/" className="footer-logo" aria-label="GAONVYRA 360 home"><Emblem3D size={44} /><Wordmark size="sm" /></Link>
             <p>All-Round Embedded &amp; AI Technology</p>
             <p className="footer-disclaimer">{tr(t.footerDisclaimer)}</p>
           </div>
