@@ -1,4 +1,4 @@
--- GAONVYRA 360 / Supabase Free / Run ONCE in Supabase SQL Editor.
+-- GAONVYRA 360 / Supabase / Run ONCE in Supabase SQL Editor.
 -- Uses Supabase-managed auth.users; never store passwords in public tables.
 create extension if not exists pgcrypto;
 

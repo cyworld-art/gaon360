@@ -1,4 +1,4 @@
-# GAONVYRA 360 — Free Website Starter
+# GAONVYRA 360 — Website
 
 **All-Round Embedded & AI Technology** · 비상업적 사이트.
 
@@ -42,9 +42,9 @@ where id=(select id from auth.users where email='YOUR_REAL_ADMIN_EMAIL' limit 1)
 3. 관리자로 로그인하여 `/admin`으로 이동하세요. **가입자 이메일·가입일·최근 로그인·권한만** 조회할 수 있습니다.
 4. 일반 회원 계정으로 `/admin` 접근을 시도하면 차단되어야 합니다.
 
-**주의:** 단순한 UI 숨김이 아닙니다. DB RPC 내부에서 관리자 권한을 검사합니다. 일반 회원은 프로필 `role`·`status`를 수정할 수 없도록 열 수준 UPDATE 권한이 제한됩니다. 관리자가 직접 회원 계정을 차단·삭제하는 기능은 이 무료 스타터에 포함하지 않았습니다. Supabase 대시보드에서 별도로 수행하세요.
+**주의:** 단순한 UI 숨김이 아닙니다. DB RPC 내부에서 관리자 권한을 검사합니다. 일반 회원은 프로필 `role`·`status`를 수정할 수 없도록 열 수준 UPDATE 권한이 제한됩니다. 관리자가 직접 회원 계정을 차단·삭제하는 기능은 이 프로젝트에 포함하지 않았습니다. Supabase 대시보드에서 별도로 수행하세요.
 
-## 4. GitHub Free 저장소
+## 4. GitHub 저장소
 
 git init
 git add .
