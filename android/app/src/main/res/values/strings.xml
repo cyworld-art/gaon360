@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GAONVYRA 360</string>
+    <string name="offline_title">연결할 수 없습니다</string>
+    <string name="open_external_failed">이 링크를 열 수 있는 앱이 없습니다.</string>
+    <string name="press_back_again">한 번 더 누르면 종료됩니다.</string>
+</resources>
